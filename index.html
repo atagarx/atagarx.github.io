@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJl3c53d285e5c49335cbfcd95092ce3e61"/>
+<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJl504eab0faec9a2799b2d1ade79336680"/>
   <meta charset="utf-8">
   <title>undefined</title>
   <meta name="generator" content="Google Web Designer 9.0.2.0915">
@@ -119,9 +119,9 @@ body {
 }
 .gwd-image-dhde {
     position: absolute;
-    left: 0px;
     width: 1920px;
     height: 1920px;
+    left: 0px;
     top: 64px;
 }
 .gwd-image-1vgp {
@@ -16375,6 +16375,10 @@ body {
       // GWD Predefined Function
       gwd.actions.gwdPagedeck.goToPage('pagedeck', 'page1_2', 'none', 1000, 'linear', 'top');
     };
+    gwd.auto_A2MClick = function(event) {
+      // GWD Predefined Function
+      gwd.actions.gwdPagedeck.goToPage('pagedeck', 'page1_3', 'none', 1000, 'linear', 'top');
+    };
   </script>
   <script type="text/javascript" gwd-events="registration">
     // Support code for event handling in Google Web Designer
@@ -16416,6 +16420,7 @@ body {
       gwd.actions.events.addHandler('S2P', 'click', gwd.auto_S2PClick, false);
       gwd.actions.events.addHandler('P2M', 'click', gwd.auto_P2MClick, false);
       gwd.actions.events.addHandler('P2S', 'click', gwd.auto_P2SClick, false);
+      gwd.actions.events.addHandler('A2M', 'click', gwd.auto_A2MClick, false);
     };
     gwd.actions.events.deregisterEventHandlers = function(event) {
       gwd.actions.events.removeHandler('AbomTap', 'click', gwd.auto_AbomTap_1Click, false);
@@ -16454,6 +16459,7 @@ body {
       gwd.actions.events.removeHandler('S2P', 'click', gwd.auto_S2PClick, false);
       gwd.actions.events.removeHandler('P2M', 'click', gwd.auto_P2MClick, false);
       gwd.actions.events.removeHandler('P2S', 'click', gwd.auto_P2SClick, false);
+      gwd.actions.events.removeHandler('A2M', 'click', gwd.auto_A2MClick, false);
     };
     document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
     document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
